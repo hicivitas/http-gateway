@@ -1,4 +1,4 @@
-FROM ubuntu:carbon
+FROM ubuntu:bionic
 ENV LANG=en_US.UTF-8 \
     LC_ALL=en_US.UTF-8 \
     S6_BEHAVIOUR_IF_STAGE2_FAILS=2 \
