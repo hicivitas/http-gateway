@@ -11,6 +11,8 @@ case ${1} in
     /bin/s6-svc -wu -T 5000 -u /var/run/s6/services/ss-local
     sleep 2
     /bin/s6-svc -wu -T 5000 -u /var/run/s6/services/privoxy
+    sleep 2
+    /bin/s6-svwait -D -o /var/run/s6/services/ss-local /var/run/s6/services/privoxy
     ;;
   *)
     exec "$@"
