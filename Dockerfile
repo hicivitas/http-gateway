@@ -11,7 +11,7 @@ RUN apt-get update && \
 	apt-get install -y shadowsocks-libev privoxy && \
 	# workaround for https://github.com/just-containers/s6-overlay/issues/158
     ln -s /init /init.entrypoint && \
-	chmod 744 /init && \
+	chmod 755 /sbin/entrypoint.sh && \
 	apt-get autoremove -y && \
 	apt-get clean
 
