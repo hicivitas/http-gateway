@@ -1,0 +1,2 @@
+#!/usr/bin/execlineb -P
+privoxy --no-daemon /etc/privoxy/config

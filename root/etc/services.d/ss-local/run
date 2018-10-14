@@ -1,0 +1,2 @@
+#!/usr/bin/execlineb -P
+ss-local -s $SS_HOST -p $SS_PORT -l 1080 -k $SS_PASS -m $SS_METHOD -b 0.0.0.0 -u --fast-open --reuse-port --no-delay
