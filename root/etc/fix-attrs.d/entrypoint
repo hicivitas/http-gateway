@@ -1,0 +1,1 @@
+/sbin/entrypoint.sh false root:root,0:0 0755 0755
